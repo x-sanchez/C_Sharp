@@ -51,3 +51,4 @@ C:\Users\Aleksandr\Desktop\C_Sharp\PracticeZhilin2020\obj\Debug\PracticeZhilin20
 C:\Users\Aleksandr\Desktop\C_Sharp\PracticeZhilin2020\obj\Debug\PracticeZhilin2020.csproj.CopyComplete
 C:\Users\Aleksandr\Desktop\C_Sharp\PracticeZhilin2020\obj\Debug\PracticeZhilin2020.exe
 C:\Users\Aleksandr\Desktop\C_Sharp\PracticeZhilin2020\obj\Debug\PracticeZhilin2020.pdb
+C:\Users\Aleksandr\Desktop\C_Sharp\PracticeZhilin2020\obj\Debug\PracticeZhilin2020.StartForm.resources

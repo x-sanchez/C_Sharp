@@ -16,5 +16,10 @@ namespace PracticeZhilin2020
         {
             InitializeComponent();
         }
+
+        private void StartForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
