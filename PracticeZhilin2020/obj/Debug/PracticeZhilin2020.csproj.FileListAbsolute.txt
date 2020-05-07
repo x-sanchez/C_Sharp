@@ -52,3 +52,5 @@ C:\Users\Aleksandr\Desktop\C_Sharp\PracticeZhilin2020\obj\Debug\PracticeZhilin20
 C:\Users\Aleksandr\Desktop\C_Sharp\PracticeZhilin2020\obj\Debug\PracticeZhilin2020.exe
 C:\Users\Aleksandr\Desktop\C_Sharp\PracticeZhilin2020\obj\Debug\PracticeZhilin2020.pdb
 C:\Users\Aleksandr\Desktop\C_Sharp\PracticeZhilin2020\obj\Debug\PracticeZhilin2020.StartForm.resources
+C:\Users\Nik\source\repos\PracticeZhilin2020\PracticeZhilin2020\obj\Debug\PracticeZhilin2020.StartForm.resources
+C:\Users\Nik\source\repos\PracticeZhilin2020\PracticeZhilin2020\obj\Debug\PracticeZhilin2020.HeadForm.resources
