@@ -20,6 +20,8 @@ namespace PracticeZhilin2020
             
         }
 
+       
+
         private void button_Login_Click(object sender, EventArgs e)
         {
             string user_login = LoginField.Text;
@@ -49,5 +51,23 @@ namespace PracticeZhilin2020
 
             }
         }
+        private void Clear(object sender, MouseEventArgs e)
+        {
+            if ((sender as TextBox).Text == "Логин")
+                (sender as TextBox).Text = "";
+        }
+
+        private void Pass(object sender, MouseEventArgs e)
+        {
+            if ((sender as TextBox).Text == "Пароль")
+                (sender as TextBox).Text = "";
+            (sender as TextBox).PasswordChar = '*';
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
     }
 }

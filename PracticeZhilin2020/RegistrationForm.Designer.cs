@@ -110,6 +110,7 @@
             this.firstnameTB.Name = "firstnameTB";
             this.firstnameTB.Size = new System.Drawing.Size(100, 22);
             this.firstnameTB.TabIndex = 3;
+            this.firstnameTB.TextChanged += new System.EventHandler(this.firstnameTB_TextChanged);
             // 
             // label3
             // 

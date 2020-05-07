@@ -85,5 +85,10 @@ namespace PracticeZhilin2020
                 return false;
             }
         }
+
+        private void firstnameTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
