@@ -21,5 +21,21 @@ namespace PracticeZhilin2020
         {
 
         }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RegistrationForm loginForm = new RegistrationForm();
+            loginForm.Show();
+            Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            Close();
+        }
     }
 }

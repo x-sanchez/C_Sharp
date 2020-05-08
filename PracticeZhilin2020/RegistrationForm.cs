@@ -27,7 +27,7 @@ namespace PracticeZhilin2020
         private void button_Login_Click(object sender, EventArgs e)
         {
             if (firstnameTB.Text == "" || firstnameTB.Text == "Имя")
-                return;          
+                return;
             if (lastnameTB.Text == "" || lastnameTB.Text == "Фамилия")
                 return;
             if (emailTB.Text == "" || emailTB.Text == "email")
@@ -40,12 +40,12 @@ namespace PracticeZhilin2020
                 return;
             if (checkUser())
                 return;
-            
+
             DB db = new DB();
 
-            MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`Login`, `First_name`, `Last_name`, `User_group`, `password`, `email`, `phone`, `Voices_player_id`, `Voices_coach_id`) VALUES (@login, @first_name, @last_name, 'user', @password, @email, @phone, NULL, NULL);",db.getConnection());
+            MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`Login`, `First_name`, `Last_name`, `User_group`, `password`, `email`, `phone`, `Voices_player_id`, `Voices_coach_id`) VALUES (@login, @first_name, @last_name, 'user', @password, @email, @phone, NULL, NULL);", db.getConnection());
 
-            command.Parameters.Add("@login",MySqlDbType.VarChar).Value = LoginTB.Text;
+            command.Parameters.Add("@login", MySqlDbType.VarChar).Value = LoginTB.Text;
             command.Parameters.Add("@first_name", MySqlDbType.VarChar).Value = firstnameTB.Text;
             command.Parameters.Add("@last_name", MySqlDbType.VarChar).Value = lastnameTB.Text;
             command.Parameters.Add("@password", MySqlDbType.VarChar).Value = PasswordTB.Text;
@@ -70,7 +70,7 @@ namespace PracticeZhilin2020
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `Login` = @u_l", dB.getConnection());
 
             command.Parameters.Add("@u_l", MySqlDbType.VarChar).Value = LoginTB.Text;
-            
+
 
             adapter.SelectCommand = command;
             adapter.Fill(datatable);
@@ -86,9 +86,54 @@ namespace PracticeZhilin2020
             }
         }
 
-        private void firstnameTB_TextChanged(object sender, EventArgs e)
+        private void Phone(object sender, EventArgs e)
         {
+            if ((sender as TextBox).Text == "Телефон")
+                (sender as TextBox).Text = "+7-___-___-__-__";
+        }
 
+        private void Def(object sender, EventArgs e)
+        {
+            if ((sender as TextBox).Text == "+7-___-___-__-__" | (sender as TextBox).Text == "")
+                (sender as TextBox).Text = "Телефон";
+        }
+
+        private void ClearN(object sender, MouseEventArgs e)
+        {
+            if ((sender as TextBox).Text == "Имя")
+                (sender as TextBox).Text = "";
+            
+        }
+
+        private void ClearF(object sender, EventArgs e)
+        {
+            if ((sender as TextBox).Text == "Фамилия")
+                (sender as TextBox).Text = "";
+        }
+
+        private void ClearE(object sender, MouseEventArgs e)
+        {
+            if ((sender as TextBox).Text == "Email")
+                (sender as TextBox).Text = "";
+        }
+
+        private void ClearL(object sender, MouseEventArgs e)
+        {
+            if ((sender as TextBox).Text == "Логин")
+                (sender as TextBox).Text = "";
+        }
+
+        private void Pass(object sender, MouseEventArgs e)
+        {
+            if ((sender as TextBox).Text == "Пароль")
+                (sender as TextBox).Text = "";
+            (sender as TextBox).UseSystemPasswordChar = true;
+        }
+
+        private void ClearP(object sender, MouseEventArgs e)
+        {
+            if((sender as TextBox).Text == "+7-___-___-__-__" )
+                (sender as TextBox).Text = "";
         }
     }
 }
